@@ -1,0 +1,11 @@
+/* Reset CSS (optional) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Do NOT put background-color blue here */
+body {
+  font-family: Arial, sans-serif;
+}
