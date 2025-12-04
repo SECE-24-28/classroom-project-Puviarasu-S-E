@@ -42,12 +42,24 @@
 }
 
 /* Individual border colors */
-.element-item { border-color: #44b2b3; }
-.element-item1 { border-color: #efaf4b; }
-.element-item2 { border-color: #00bdeb; }
-.element-item3 { border-color: #864af9; }
-.element-item4 { border-color: #fc2947; }
-.element-item5 { border-color: #32c766; }
+.element-item {
+  border-color: #44b2b3;
+}
+.element-item1 {
+  border-color: #efaf4b;
+}
+.element-item2 {
+  border-color: #00bdeb;
+}
+.element-item3 {
+  border-color: #864af9;
+}
+.element-item4 {
+  border-color: #fc2947;
+}
+.element-item5 {
+  border-color: #32c766;
+}
 
 .element h5 {
   font-size: 20px;
