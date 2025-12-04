@@ -22,3 +22,30 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# VS Code / Cursor extensions (causing CRLF warnings)
+.cursor/
+
+# Python junk
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.ipython/
+
+# Maven / Java local repository
+.m2/
+
+# System files
+.lesshst
+.history
+.gitconfig
+
+# JetBrains
+.idea/
+
+# Temporary files
+tmp/
+temp/
+
+# Python virtual env
+venv/
+env/

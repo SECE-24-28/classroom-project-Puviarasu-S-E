@@ -1,23 +1,14 @@
-//import HelloWorld from "./hello-world/hello-world-component";
-
-// function App() {
-//   return (
-//     <>
-//       <HelloWorld />
-//       {/* Removed the extra hello world */}
-//     </>
-//   );
-// }
-
-// export default App;
-import Banner from "./banner";
-import "./banner.css";
-
+import React from "react";
+import AboutSection from "./AboutSection";
+import PostionComponent from "./positioning/position-component";
+import TrustedbyComponent from "./trusted-by/trusted-by-component";
 function App() {
   return (
-    <>
-      <Banner />
-    </>
+    <div>
+      {/* <AboutSection /> */}
+      {/* <PostionComponent/> */}
+      <TrustedbyComponent />
+    </div>
   );
 }
 
