@@ -4,6 +4,7 @@ import PostionComponent from "./positioning/position-component";
 import TrustedbyComponent from "./trusted-by/trusted-by-component";
 import ImpactAtGlance from "./ImpactAtGlance/ImpactAtGlance";
 import OurPosition from "./OurPromise/OurPromise";
+import FlexWrap from "./FlexWrap/flex-wrap-componenet";
 function App() {
   return (
     <div>
@@ -11,7 +12,8 @@ function App() {
       {/* <PostionComponent/> */}
       {/* <TrustedbyComponent /> */}
       {/* <ImpactAtGlance/> */}
-      <OurPosition />
+      {/* <OurPosition /> */}
+      <FlexWrap/>
     </div>
   );
 }
