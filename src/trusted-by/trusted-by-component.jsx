@@ -1,34 +1,56 @@
-
 import React from "react";
 import { TrustedByStyle } from "./trusted-by-style";
+
+
+import { FaUniversity } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
+import { GiBookshelf } from "react-icons/gi";
+import { FaUserGraduate } from "react-icons/fa";
+
 const TrustedbyComponent = () => {
   return (
     <TrustedByStyle>
       <h1>Trusted By</h1>
+
       <div className="parent">
-        <div className="child">
+        {/* Colleges */}
+        <div className="child turquoise">
+          <div className="icon-circle">
+            <FaUniversity className="icon" />
+          </div>
           <span className="numbers">100+</span>
-          <br></br>
           <span className="details">Colleges</span>
         </div>
-        <div className="child">
+
+        {/* Trainers */}
+        <div className="child blue">
+          <div className="icon-circle">
+            <FaChalkboardTeacher className="icon" />
+          </div>
           <span className="numbers">150</span>
-          <br></br>
           <span className="details">Professional Trainers</span>
         </div>
-        <div className="child">
+
+        {/* Study Materials */}
+        <div className="child orange">
+          <div className="icon-circle">
+            <GiBookshelf className="icon" />
+          </div>
           <span className="numbers">1000+</span>
-          <br></br>
-          <span>Study Materials</span>
+          <span className="details">Study Materials</span>
         </div>
-        <div className="child">
-          <span className="numbers"> 100000+</span>
-          <br></br>
+
+        {/* Students */}
+        <div className="child red">
+          <div className="icon-circle">
+            <FaUserGraduate className="icon" />
+          </div>
+          <span className="numbers">1,00,000+</span>
           <span className="details">Students</span>
         </div>
       </div>
     </TrustedByStyle>
   );
 };
-export default TrustedbyComponent;
 
+export default TrustedbyComponent;
