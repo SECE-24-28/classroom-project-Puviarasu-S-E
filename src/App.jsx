@@ -17,6 +17,7 @@ import AdditionOperationComponent from "./addition-operation-in-state/addition-o
 import FetchApiComponent from "./fetch-api/fetch-api-component";
 import UseEffectComponent from "./use-effect-practice/use-effect-practice-component";
 import UseEffectComponent2 from "./use-effect-practice/use-effect-practice-component2";
+import UseEffectComponent3 from "./use-effect-practice/use-effect-practice-component3";
 
 import RegisterForm from "./Register-Form/RegisterForm";
 import FourOFourComponent from "./404-component/404-component";
@@ -55,6 +56,7 @@ const App = () => {
         <Link to="/api-fetch">API Fetch</Link>
         <Link to="/use-effect-practice">UseEffect</Link>
         <Link to="/use-effect-practice2">UseEffect2</Link>
+        <Link to="/use-effect-practice3">UseEffect3</Link>
 
         {/* Register */}
         <Link to="/register">Register</Link>
@@ -87,6 +89,10 @@ const App = () => {
           <Route
             path="/use-effect-practice2"
             element={<UseEffectComponent2 />}
+          />
+          <Route
+            path="/use-effect-practice3"
+            element={<UseEffectComponent3 />}
           />
 
           {/* Register Form */}

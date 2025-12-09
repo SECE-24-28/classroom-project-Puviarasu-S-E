@@ -20,6 +20,7 @@ const Spinner = styled.div`
   border-top: 2px solid var(--primary);
   border-bottom: 2px solid var(--primary);
   animation: ${spin} 1s linear infinite;
+  background-color: red;
 `;
 
 const LoadingSpinner = () => {
