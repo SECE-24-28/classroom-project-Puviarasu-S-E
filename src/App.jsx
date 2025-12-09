@@ -8,14 +8,18 @@ import ImpactAtGlance from "./ImpactAtGlance/ImpactAtGlance";
 import OurPromise from "./OurPromise/OurPromise";
 import FlexWrap from "./FlexWrap/flex-wrap-componenet";
 import ExamplePositionComponent from "./PositionExample/ExamplePositionComponent";
+
 import PropsPractice from "./props-practice/props-practice";
 import UseStateComponent from "./use-state-component/use-state-component";
-import FourOFourComponent from "./404-component/404-component";
 import UsestateformComponent from "./user-state-form/user-state-form-component";
 import AdditionOperationComponent from "./addition-operation-in-state/addition-operation-component";
 
-// ⭐ REGISTER FORM IMPORT
+import FetchApiComponent from "./fetch-api/fetch-api-component";
+import UseEffectComponent from "./use-effect-practice/use-effect-practice-component";
+import UseEffectComponent2 from "./use-effect-practice/use-effect-practice-component2";
+
 import RegisterForm from "./Register-Form/RegisterForm";
+import FourOFourComponent from "./404-component/404-component";
 
 const App = () => {
   const userProps = { name: "Arun", mobile: "14234423243" };
@@ -29,6 +33,7 @@ const App = () => {
           backgroundColor: "#e9e9e9",
           display: "flex",
           gap: "18px",
+          flexWrap: "wrap",
           fontSize: "17px",
         }}
       >
@@ -39,18 +44,26 @@ const App = () => {
         <Link to="/our-promise">Our Promise</Link>
         <Link to="/flex-wrap">Flex Wrap</Link>
         <Link to="/example">Example</Link>
+
+        {/* State & Props */}
         <Link to="/use-state">Counter</Link>
         <Link to="/props">Props</Link>
         <Link to="/use-state-form">Form</Link>
         <Link to="/addition-operation">Addition</Link>
 
-        {/* ⭐ NEW REGISTER MENU */}
+        {/* API & Effects */}
+        <Link to="/api-fetch">API Fetch</Link>
+        <Link to="/use-effect-practice">UseEffect</Link>
+        <Link to="/use-effect-practice2">UseEffect2</Link>
+
+        {/* Register */}
         <Link to="/register">Register</Link>
       </nav>
 
       {/* ================= ROUTES ================== */}
       <div style={{ padding: "20px" }}>
         <Routes>
+          {/* Main Sections */}
           <Route path="/" element={<AboutSection />} />
           <Route path="/position" element={<PostionComponent />} />
           <Route path="/trusted-by" element={<TrustedbyComponent />} />
@@ -58,8 +71,9 @@ const App = () => {
           <Route path="/our-promise" element={<OurPromise />} />
           <Route path="/flex-wrap" element={<FlexWrap />} />
           <Route path="/example" element={<ExamplePositionComponent />} />
-          <Route path="/use-state" element={<UseStateComponent />} />
 
+          {/* Props & State */}
+          <Route path="/use-state" element={<UseStateComponent />} />
           <Route path="/props" element={<PropsPractice {...userProps} />} />
           <Route path="/use-state-form" element={<UsestateformComponent />} />
           <Route
@@ -67,10 +81,18 @@ const App = () => {
             element={<AdditionOperationComponent />}
           />
 
-          {/* ⭐ NEW REGISTER ROUTE */}
+          {/* Fetching & UseEffect */}
+          <Route path="/api-fetch" element={<FetchApiComponent />} />
+          <Route path="/use-effect-practice" element={<UseEffectComponent />} />
+          <Route
+            path="/use-effect-practice2"
+            element={<UseEffectComponent2 />}
+          />
+
+          {/* Register Form */}
           <Route path="/register" element={<RegisterForm />} />
 
-          {/* ⭐ 404 PAGE */}
+          {/* 404 Page */}
           <Route path="*" element={<FourOFourComponent />} />
         </Routes>
       </div>
